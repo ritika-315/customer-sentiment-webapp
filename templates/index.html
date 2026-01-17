@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Customer Sentiment Analyzer</title>
+
+<style>
+body{
+    background: linear-gradient(120deg,#4e73df,#1cc88a);
+    font-family: 'Segoe UI', sans-serif;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background:white;
+    width:60%;
+    margin:auto;
+    margin-top:60px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+textarea{
+    width:90%;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+button{
+    background:#4e73df;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2e59d9;
+}
+
+.result{
+    margin-top:20px;
+    font-size:20px;
+    font-weight:bold;
+}
+.pos{ color:green; }
+.neg{ color:red; }
+</style>
+</head>
+
+<body>
+<div class="container">
+<h2>Customer Feedback Sentiment Analyzer</h2>
+<p>Enter feedback and our AI will analyze customer satisfaction</p>
+
+<form action="/predict" method="post">
+<textarea name="feedback" rows="6" placeholder="Type customer feedback here..."></textarea>
+<br><br>
+<button type="submit">Analyze Sentiment</button>
+</form>
+
+<br>
+<a href="/dashboard">
+<button>Go to Dashboard</button>
+</a>
+
+{% if prediction %}
+<div class="result">
+Predicted Sentiment:
+<span class="{% if prediction=='Positive' %}pos{% else %}neg{% endif %}">
+{{ prediction }}
+</span>
+</div>
+{% endif %}
+</div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+Feedback,Predicted_Sentiment,Timestamp
+Product is not good,Negative,2026-01-17 20:23:47.880485
+Product is good,Positive,2026-01-17 20:23:55.914061
+Product is good,Positive,2026-01-17 20:29:46.137815
+The product quality is amazing and delivery was fast,Negative,2026-01-17 21:45:44.220276
+The product quality is amazing and delivery was fast,"{'label': 'POSITIVE', 'score': 0.9997988343238831}",2026-01-17 22:00:02.483854
+The product quality is amazing and delivery was fast,"{'label': 'POSITIVE', 'score': 0.9997988343238831}",2026-01-17 22:00:25.688874
+"I really love this phone, battery backup is great","{'label': 'POSITIVE', 'score': 0.9998123049736023}",2026-01-17 22:24:26.572307
+Customer service was very helpful and polite,"{'label': 'POSITIVE', 'score': 0.9988419413566589}",2026-01-17 22:24:47.294811
+The app is easy to use and works smoothly,"{'label': 'POSITIVE', 'score': 0.9997519850730896}",2026-01-17 22:25:05.418116
+The product is not good and stopped working,"{'label': 'NEGATIVE', 'score': 0.9997825026512146}",2026-01-17 22:25:28.914878
+The product quality is amazing and delivery was fast,"{'label': 'POSITIVE', 'score': 0.9997988343238831}",2026-01-18 01:22:06.590896
+The product quality is amazing and delivery was fast,Error,2026-01-18 02:30:15.047898
+The product quality is amazing and delivery was fast,Error,2026-01-18 02:30:29.861445
+The product quality is amazing and delivery was fast,Error,2026-01-18 02:31:50.424752
+The product quality is amazing and delivery was fast,Error,2026-01-18 02:33:26.290081
+The product quality is amazing and delivery was fast	,"{'label': 'POSITIVE', 'score': 0.9997988343238831}",2026-01-18 02:45:20.104194
+The product quality is amazing and delivery was fast,"{'label': 'POSITIVE', 'score': 0.9997988343238831}",2026-01-18 02:45:42.481622
+The product quality is amazing and delivery was fast,"{'label': 'POSITIVE', 'score': 0.9997988343238831}",2026-01-18 03:08:12.948681

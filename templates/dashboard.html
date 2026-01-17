@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<style>
+body{font-family:Arial;background:#f4f6f9;text-align:center;}
+.card{display:inline-block;background:white;padding:20px;margin:10px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+table{margin:auto;border-collapse:collapse;width:80%;background:white;}
+th,td{padding:10px;border:1px solid #ddd;}
+th{background:#4e73df;color:white;}
+a{display:block;margin-top:20px;}
+</style>
+</head>
+<body>
+
+<h2>Customer Feedback Dashboard</h2>
+
+<div class="card">Total Feedback<br><b>{{ total }}</b></div>
+<div class="card">Positive %<br><b style="color:green">{{ pos_percent }}%</b></div>
+<div class="card">Negative %<br><b style="color:red">{{ neg_percent }}%</b></div>
+
+<h3>Recent Feedback</h3>
+
+<table>
+<tr><th>Feedback</th><th>Sentiment</th><th>Time</th></tr>
+{% for row in recent %}
+<tr>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}</td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/">
+<button>Back to Prediction Page</button>
+</a>
+
+</body>
+</html>
