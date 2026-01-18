@@ -70,16 +70,15 @@ Open in browser: http://127.0.0.1:5000
 
 Dashboard: http://127.0.0.1:5000/dashboard
 
----
 
-## 🌍 Live Deployment
+<!-- ## 🌍 Live Deployment
 
 This project is publicly deployed on Render and accessible to everyone:
 
 🔗 **Live Web App:**  
 https://customer-sentiment-webapp.onrender.com/
 
-Users can submit feedback and view real-time sentiment predictions along with dashboard analytics.
+Users can submit feedback and view real-time sentiment predictions along with dashboard analytics. -->
 
 ---
 
