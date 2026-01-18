@@ -19,7 +19,7 @@ The system also logs user feedback and provides a dashboard with analytics.
 
 ## Screenshots
 <img width="1904" height="877" alt="image" src="https://github.com/user-attachments/assets/c3c04eae-e2e8-49c7-8886-e076c14cfab6" />
-v<img width="1878" height="875" alt="image" src="https://github.com/user-attachments/assets/bd54718b-66f6-4176-97a2-909091897b44" />
+<img width="1878" height="875" alt="image" src="https://github.com/user-attachments/assets/bd54718b-66f6-4176-97a2-909091897b44" />
 
 ---
 
