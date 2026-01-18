@@ -5,6 +5,7 @@ import pandas as pd
 from transformers import pipeline
 from optimum.onnxruntime import ORTModelForSequenceClassification
 from transformers import AutoTokenizer
+from flask import jsonify
 
 app = Flask(__name__)
 
@@ -33,6 +34,13 @@ def predict():
         writer = csv.writer(f)
         writer.writerow([feedback, result, datetime.now()])
     return render_template("index.html", prediction=result)
+
+@app.route("/api/predict", methods=["POST"])
+def api_predict():
+    text = request.json["feedback"]
+    result = sentiment_pipeline(text)[0]
+    label = "Positive" if result["label"] == "POSITIVE" else "Negative"
+    return jsonify({"sentiment": label})
 
 # 🔷 DASHBOARD ROUTE
 @app.route("/dashboard")
